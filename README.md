@@ -4,7 +4,7 @@ Tool zum Auslesen Ihrer Microsoft Windows und Office Produktschlüssel
 Benefit:
 --------
 1. läuft auf jedem x86 und x64 Bit Betriebssystem
-2. liest Windows und Office Keys der gesammten Windows Familie aus (nur lokal installierte, nicht über MS Account)
+2. liest Windows und Office Keys der gesammten Windows Familie aus (nur lokal installierte Office installationen, nicht über MS Account)
 3. Schlüssel können zur Inventarisierung als PDF oder HTML-Bericht gespeichert werden
 4. Key kann für 30 Sekunden in der Zwischablage kopiert werden
 
