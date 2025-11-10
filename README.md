@@ -1,6 +1,7 @@
-# JX-s-Product-Key-Reader
+# Microsoft Windows und Office Produktschlüssel-Finder
 Tool zum Auslesen Ihrer Microsoft Windows und Office Produktschlüssel
-Geschrieben in Powershell 5.1
+Komplett geschrieben in Powershell 5.1
+DE Version
 
 Benefit:
 --------
