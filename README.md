@@ -1,21 +1,54 @@
-# Microsoft Windows und Office Produktschlüssel-Finder
-Tool zum Auslesen Ihrer Microsoft Windows und Office Produktschlüssel
->Komplett geschrieben in Powershell 5.1
 
->DE Version
+<img width="1002" height="601" alt="2025-12-01 13_58_16-C# – Datei-Explorer" src="https://github.com/user-attachments/assets/cd1b62f8-6a41-40cf-a1d3-124ae1fa3943" />
 
-Benefit:
---------
->1. läuft auf jedem x86 und x64 Bit Betriebssystem
->2. liest Windows und Office Keys der gesammten Windows Familie aus
-    (nur lokal installierte Office installationen, nicht über MS Account)
->4. Schlüssel können zur Inventarisierung als PDF oder HTML-Bericht gespeichert werden
->5. Key kann für 30 Sekunden in der Zwischablage kopiert werden
+🔑 Product Key Reader (Chttps://www.google.com/search?q=%23 Edition)
+Ein leichtgewichtiges, portables Windows-Tool zum schnellen Auslesen von Microsoft Windows- und Office-Produktschlüsseln. Ursprünglich als PowerShell-Skript gestartet, wurde dieses Projekt für bessere Performance und Stabilität nativ nach Chttps://www.google.com/search?q=%23 (.NET WinForms) portiert.
 
-Installation:
--------------
-1. ZIP entpacken und .exe starten
+(Hier könntest du später einen Screenshot deines Tools einfügen)
 
-Optional für PDF-Export:
-------------------------
-1. Compiler von HTML zu PDF (Download: https://wkhtmltopdf.org/downloads.html) installieren
+✨ Funktionen
+🔍 Windows-Erkennung: Liest den Produktschlüssel direkt aus der Registry (DigitalProductId).
+
+🚀 Windows 11 Support: Erkennt Windows 11 korrekt anhand der Build-Nummer (auch wenn die Registry "Windows 10" meldet).
+
+📦 Office-Unterstützung: Scannt nach installierten Office-Versionen (inkl. Click-to-Run & WOW6432Node).
+
+📄 PDF & HTML Export:
+
+Exportiert die Liste sauber formatiert als HTML.
+
+PDF-Export: Nutzt wkhtmltopdf über direkte Speicher-Pipe (Stdin) für fehlerfreie Erstellung ohne temporäre Dateien.
+
+📋 Sicheres Kopieren: Kopiert Schlüssel in die Zwischenablage und löscht diese automatisch nach 30 Sekunden (visueller Timer).
+
+🛠 Portabel: Keine Installation notwendig. Läuft direkt als .exe.
+
+⚙️ Voraussetzungen
+Betriebssystem: Windows 10 oder Windows 11
+
+Laufzeitumgebung: .NET Framework 4.7.2 (oder höher)
+
+Rechte: Erfordert Administrator-Rechte (zum Lesen der Registry-Schlüssel).
+
+Optional (für PDF): wkhtmltopdf muss installiert sein oder im Ordner liegen.
+
+🚀 Installation & Nutzung
+Lade die neueste ProductKeyReader.zip aus den Releases herunter.
+
+(Optional) Lege wkhtmltopdf.exe in denselben Ordner, um die PDF-Funktion portabel zu nutzen.
+
+Starte das Programm (Bestätige die Admin-Abfrage).
+
+Klicke auf Scannen.
+
+🐛 Troubleshooting
+PDF wird nicht erstellt:
+
+Stelle sicher, dass wkhtmltopdf installiert ist.
+
+Falls installiert: Zeige dem Programm den Pfad zur wkhtmltopdf.exe, wenn du danach gefragt wirst.
+
+Es fehlen eventuell die Visual C++ Redistributables auf deinem System (benötigt von wkhtmltopdf).
+
+📝 Lizenz & Credits
+Entwickelt von Malte Speck © 2025.
