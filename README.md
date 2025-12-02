@@ -2,7 +2,7 @@
 Ein leichtgewichtiges, portables Windows-Tool zum schnellen Auslesen von Microsoft Windows- und Office-Produktschlüsseln. Ursprünglich als PowerShell-Skript gestartet, 
 wurde dieses Projekt für bessere Performance und Stabilität
 
-<img width="1002" height="601" alt="2025-12-01 13_58_16-C# – Datei-Explorer" src="https://github.com/user-attachments/assets/cd1b62f8-6a41-40cf-a1d3-124ae1fa3943" />
+<img width="1127" height="661" alt="2025-12-02 12_08_30-Product Key Reader 2025" src="https://github.com/user-attachments/assets/b2f75790-c7f6-4166-a31b-5ce2224e41d4" />
 
 **✨ Funktionen**
 🔍 Windows-Erkennung: Liest den Produktschlüssel direkt aus der Registry (DigitalProductId).
