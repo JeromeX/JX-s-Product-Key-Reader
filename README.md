@@ -1,52 +1,53 @@
-🔑 Product Key Reader
-Ein leichtgewichtiges, portables Windows-Tool zum schnellen Auslesen von Microsoft Windows- und Office-Produktschlüsseln. Ursprünglich als PowerShell-Skript gestartet, 
-wurde dieses Projekt für bessere Performance und Stabilität in C# umgeschrieben
+# 🔑 Product Key Reader
 
-<img width="1127" height="661" alt="2025-12-02 12_08_30-Product Key Reader 2025" src="https://github.com/user-attachments/assets/b2f75790-c7f6-4166-a31b-5ce2224e41d4" />
+A lightweight, portable Windows tool designed to quickly retrieve Microsoft Windows and Office product keys. Originally started as a PowerShell script, this project has been rewritten in C# for improved performance and stability.
 
-**✨ Funktionen**
-🔍 Windows-Erkennung: Liest den Produktschlüssel direkt aus der Registry (DigitalProductId).
+> [!NOTE]
+> The application interface is currently available in **German only**.
 
-🚀 Windows 11 Support: Erkennt Windows 11 korrekt anhand der Build-Nummer (auch wenn die Registry "Windows 10" meldet).
+<div align="center">
+  <img width="80%" src="https://github.com/user-attachments/assets/b2f75790-c7f6-4166-a31b-5ce2224e41d4" alt="Product Key Reader Screenshot" />
+</div>
 
-📦 Office-Unterstützung: Scannt nach installierten Office-Versionen (inkl. Click-to-Run & WOW6432Node).
+---
 
-**📄 PDF & HTML Export:**
+## 💻 Built With
 
-Exportiert die Liste sauber formatiert als HTML.
+* **C#** (Core Application)
+* **HTML** (Report Formatting & Export)
 
-**PDF-Export: Nutzt wkhtmltopdf über direkte Speicher-Pipe (Stdin) für fehlerfreie Erstellung ohne temporäre Dateien.**
+## ✨ Features
 
-📋 Sicheres Kopieren: Kopiert Schlüssel in die Zwischenablage und löscht diese automatisch nach 30 Sekunden (visueller Timer).
+* **🔍 Windows Recovery:** Reads the product key directly from the Registry (`DigitalProductId`).
+* **🚀 Windows 11 Support:** Correctly detects Windows 11 based on the Build Number (even if the Registry reports "Windows 10").
+* **📦 Office Support:** Scans for installed Office versions (including Click-to-Run & `WOW6432Node`).
+* **📄 PDF & HTML Export:**
+    * Exports the list as a cleanly formatted HTML file.
+    * **PDF Export:** Utilizes `wkhtmltopdf` via a direct memory pipe (Stdin) for error-free generation without creating temporary files.
+* **📋 Secure Copy:** Copies keys to the clipboard and automatically clears them after **30 seconds** (visual timer included).
+* **🛠 Portable:** No installation required. Runs directly as an `.exe`.
 
-**🛠 Portabel: Keine Installation notwendig. Läuft direkt als .exe.**
+## ⚙️ Requirements
 
-**⚙️ Voraussetzungen**
-Betriebssystem: Windows 10 oder Windows 11
+* **OS:** Windows 10 or Windows 11
+* **Runtime:** .NET Framework 4.7.2 (or newer)
+* **Permissions:** Requires **Administrator privileges** (to read restricted Registry keys).
+* **Optional (for PDF):** `wkhtmltopdf` must be installed or located in the application folder.
 
-Laufzeitumgebung: .NET Framework 4.7.2 (oder höher)
+## 🚀 Installation & Usage
 
-Rechte: Erfordert Administrator-Rechte (zum Lesen der Registry-Schlüssel).
+1.  Download the latest `ProductKeyReader.zip` from the **[Releases](../../releases)** page.
+2.  **(Optional)** Place `wkhtmltopdf.exe` in the same folder to use the PDF function in portable mode.
+3.  Start the program (Confirm the Admin/UAC prompt).
+4.  Click on **Scan**.
 
-Optional (für PDF): wkhtmltopdf muss installiert sein oder im Ordner liegen.
+## 🐛 Troubleshooting
 
-**🚀 Installation & Nutzung**
-Lade die neueste ProductKeyReader.zip aus den Releases herunter.
+**PDF is not being created:**
+* Ensure that `wkhtmltopdf` is installed or the executable is in the app folder.
+* **If installed:** Point the program to the correct path of `wkhtmltopdf.exe` if prompted.
+* Your system might be missing the **Visual C++ Redistributables** (which are required by `wkhtmltopdf`).
 
-(Optional) Lege wkhtmltopdf.exe in denselben Ordner, um die PDF-Funktion portabel zu nutzen.
+## 📝 License & Credits
 
-Starte das Programm (Bestätige die Admin-Abfrage).
-
-Klicke auf Scannen.
-
-**🐛 Troubleshooting**
-PDF wird nicht erstellt:
-
-Stelle sicher, dass wkhtmltopdf installiert ist.
-
-Falls installiert: Zeige dem Programm den Pfad zur wkhtmltopdf.exe, wenn du danach gefragt wirst.
-
-Es fehlen eventuell die Visual C++ Redistributables auf deinem System (benötigt von wkhtmltopdf).
-
-📝 Lizenz & Credits
-Entwickelt von Malte Speck © 2025.
+Developed by Malte Speck © 2025.
