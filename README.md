@@ -1,6 +1,6 @@
 🔑 Product Key Reader
 Ein leichtgewichtiges, portables Windows-Tool zum schnellen Auslesen von Microsoft Windows- und Office-Produktschlüsseln. Ursprünglich als PowerShell-Skript gestartet, 
-wurde dieses Projekt für bessere Performance und Stabilität
+wurde dieses Projekt für bessere Performance und Stabilität in C# umgeschrieben
 
 <img width="1127" height="661" alt="2025-12-02 12_08_30-Product Key Reader 2025" src="https://github.com/user-attachments/assets/b2f75790-c7f6-4166-a31b-5ce2224e41d4" />
 
